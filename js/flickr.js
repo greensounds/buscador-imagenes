@@ -7,7 +7,7 @@ $(document).ready(function(){
 		$searchTerm.prop('disabled', true);
 		$submitButton.attr('disabled', true).val("Buscando...");
 		//AJAX
-		var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+		var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 		var animal =  $searchTerm.val();
 		var flickrOptions = {
 			tags: animal,
